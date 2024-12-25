@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+    <link rel="stylesheet" href="./index3.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="nav-left">
+                    <img src="./img/logo.png" alt="Logo" class="logo">
+                    <button class="catalog-btn">Каталог</button>
+                </div>
+                <input type="text" class="search-bar" placeholder="Найти товар">
+                <div class="nav-right">
+                    <img src="./img/favorites.png" alt="Favorites" class="icon">
+                    <img src="./img/orders.png" alt="Orders" class="icon">
+                    <img src="./img/cart.png" alt="Cart" class="icon">
+                    <p class="user-name">Алексей</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumbs">Главная > Избранное</div>
+            <h1 class="main-title">Избранное</h1>
+
+            <!-- Content Section -->
+            <div class="content">
+                <!-- Filter Section -->
+                <aside class="filter">
+                    <h3>Фильтр</h3>
+                    <div class="filter-section">
+                        <label for="price">Цена</label>
+                        <div class="price-range">
+                            <input type="number" id="min-price" value="1">
+                            <span>-</span>
+                            <input type="number" id="max-price" value="100">
+                        </div>
+                        <input type="range" class="range-slider" min="1" max="100" step="1">
+                    </div>
+                    <div class="categories">
+                        <label><input type="checkbox"> Молоко</label>
+                        <label><input type="checkbox"> Сливки</label>
+                        <label><input type="checkbox"> Яйца</label>
+                        <label><input type="checkbox"> В наличии</label>
+                    </div>
+                    <button class="apply-btn">Применить</button>
+                </aside>
+
+                <!-- Products Section -->
+                <section class="products">
+                    <div class="product-grid">
+                        <!-- Product Card -->
+                        <div class="product-card">
+                            <img src="./img/product1.png" alt="Product 1" class="product-image">
+                            <p class="product-name">Кофе XYZ</p>
+                            <p class="product-price">39.99 ₽</p>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                        <!-- Repeat as necessary -->
+                    </div>
+                    <button class="load-more-btn">Показать ещё</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2024 Северянока. Все права защищены.</p>
+                <p>Телефон: +7 800 777 33 33</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
